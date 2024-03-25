@@ -17,7 +17,7 @@ AppointmentRoutes.delete("/delete-task", (req, res, next) => {
     appointmentcontroller.delete(req, res, next);
 })
 
-AppointmentRoutes.put("/edit-task", (req, res, next) => {
+AppointmentRoutes.put("/edit-task/:id", (req, res, next) => {
     appointmentcontroller.update(req, res, next)
 })
 

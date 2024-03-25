@@ -50,7 +50,7 @@ export default class AppointmentController {
     async update(req, res, next) {
         try {
             const userId = req.userId;
-            const id = req.body.id;
+            const id = req.params.id;
             const Appointement = ({
                 title: req.body.title,
                 description: req.body.description,
